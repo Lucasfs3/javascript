@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou estrangeiro</title>
+    <style>
+        input#txt1 {
+            margin-left: 15px;
+        }
+        input {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+    <p><strong>Escreva aqui de qual país você é :</strong></p>
+    <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Identificar" onclick="identificar()">
+    <div id="res"></div>
+
+    <script>
+        function identificar() {
+        var txt1 = window.document.getElementById('txt1')
+        var res = window.document.getElementById('res')
+        var pais = (txt1.value)
+
+        if (pais == "Brasil") {
+            res.innerHTML = `Vivendo em <strong> ${pais} </strong> <br> `
+            res.innerHTML += " Você é <strong>Brasileiro </strong>"
+        } else {
+            res.innerHTML = `Vivendo em <strong> ${pais} </strong> <br> `
+            res.innerHTML += "Você é <strong>Estrangeiro</strong>"
+        }
+        }
+    </script>
+</body>
+</html>

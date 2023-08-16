@@ -25,3 +25,13 @@ footer {
     font-style: italic;
 
 }
+
+#texto {
+    text-align: center;
+    padding: 15px;
+}
+
+#img {
+    display: flex;
+    margin: auto;
+}
